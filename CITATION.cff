@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "photodyn2p: a TTV and photodynamical model for two planets, with a graphical user interface"
+type: software
+authors:
+  - family-names: Vanaverbeke
+    given-names: Siegfried
+    orcid: "https://orcid.org/0000-0003-0231-2676"
+    affiliation: "Vereniging Voor Sterrenkunde, Mol, Belgium; Centre for Mathematical Plasma Astrophysics, KU Leuven, Belgium; Astrolab IRIS, Ypres, Belgium"
+version: "1.1"
+date-released: "2026-11-03"
+doi: "10.5281/zenodo.23921757"
+license: MIT
+repository-code: "https://github.com/svaverbe/photodyn2p"
+url: "https://svaverbe.github.io/photodyn2p/"
+abstract: >-
+  photodyn2p models two gravitationally interacting planets around one star with the N-body code TTVFast.
+  It fits mid-transit times, radial velocities and light curves (with a Gaussian process for stellar
+  activity), using a global search (differential evolution), a maximum-likelihood fit and MCMC (emcee),
+  and comes with a graphical user interface, a user manual and test examples with a known truth.
+keywords:
+  - exoplanets
+  - transit timing variations
+  - photodynamical modelling
+  - N-body
+  - MCMC
+references:
+  - type: article
+    title: "TOI-3686: A Hot Jupiter and Sub-Neptune In A 2:1 Mean-Motion Resonance"
+    authors:
+      - family-names: Yee
+        given-names: Samuel W.
+      - name: "et al."
+    year: 2026
+    identifiers:
+      - type: other
+        value: "arXiv:2610.28533"

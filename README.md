@@ -1,5 +1,7 @@
 # photodyn2p
 
+[![DOI](https://zenodo.org/badge/1444404526.svg)](https://doi.org/10.5281/zenodo.23921757)
+
 **A TTV and photodynamical model for two planets, with a graphical user interface.**
 
 photodyn2p models two gravitationally interacting planets around one star. The orbits are integrated with the
@@ -74,3 +76,16 @@ numpy, scipy, matplotlib, [ttvfast](https://github.com/mindriot101/ttvfast-pytho
 [emcee](https://github.com/dfm/emcee), h5py, PyQt5. Please cite TTVFast (Deck et al. 2014), batman
 (Kreidberg 2015), celerite (Foreman-Mackey et al. 2017) and emcee (Foreman-Mackey et al. 2013) when you use
 results of this program.
+
+## Citation
+
+If you use photodyn2p, please cite it via its Zenodo record
+([doi:10.5281/zenodo.23921757](https://doi.org/10.5281/zenodo.23921757)); the button
+*Cite this repository* on GitHub gives the reference in APA and BibTeX format (from `CITATION.cff`):
+
+> Vanaverbeke, S. (2026). photodyn2p: a TTV and photodynamical model for two planets, with a graphical user
+> interface (version 1.1). Zenodo. https://doi.org/10.5281/zenodo.23921757
+
+## License
+
+photodyn2p is released under the [MIT License](LICENSE). Copyright (c) 2026 Siegfried Vanaverbeke.
