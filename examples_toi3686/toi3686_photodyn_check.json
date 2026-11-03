@@ -1,0 +1,16 @@
+{
+ "name": "TOI-3686 (reference check against v3)", "mode": "photodyn", "outdir": "output_check",
+ "t_start": 1789.7023861065124, "dt": 0.08,
+ "star": {"mstar": [1.049, 0.09], "rstar": [1.184, 0.045]},
+ "planets": [
+  {"name": "b", "transiting": true, "P": 2.5432, "mass_unit": "Mearth", "rp": 0.0231, "b": 0.4, "P_bounds": [2.50, 2.60]},
+  {"name": "c", "transiting": true, "P": 5.0768, "mass_unit": "Mjup", "rp": 0.1158, "b": 0.29,
+   "midtimes": "../../toi3686_c_midtimes.dat", "P_bounds": [5.05, 5.10]}
+ ],
+ "midtimes": {"floor_min": 2.0, "jitter": "none", "exclude_facility_in_photodyn": "TESS"},
+ "rv": {"file": "../../rv_TOI3686.dat", "gp": true, "share_prot_with": 85},
+ "photometry": {"csv": "../../toi3686_output/toi3686_detrended_paper.csv", "trend": "multiply", "gp": true,
+                "prot_bounds": [4.0, 20.0], "lnq0_min": -2.302585, "dilution": "free"},
+ "search": {"enabled": false},
+ "start_json": "../../start_bounds_ml.json"
+}

@@ -1,0 +1,17 @@
+# results of runs (recreated by the program)
+output/
+output_*/
+out_*/
+*.h5
+*.h5.names.json
+*.npz
+*.log
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

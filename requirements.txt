@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+ttvfast
+batman-package
+celerite2
+emcee
+h5py
+PyQt5

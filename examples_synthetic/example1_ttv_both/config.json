@@ -1,0 +1,83 @@
+{
+  "name": "Synthetic example 1 (both transiting)",
+  "mode": "ttv",
+  "outdir": "output",
+  "t_start": 999.0,
+  "t_end": 1800.0,
+  "dt": 0.08,
+  "star": {
+    "mstar": [
+      1.0,
+      0.05
+    ],
+    "rstar": [
+      1.0,
+      0.03
+    ]
+  },
+  "free_ecc": true,
+  "ecc_max": 0.5,
+  "midtimes": {
+    "floor_min": 1.0,
+    "jitter": "none",
+    "exclude_facility_in_photodyn": "TESS"
+  },
+  "search": {
+    "enabled": true,
+    "popsize": 15,
+    "maxiter": 120,
+    "seed": 1,
+    "strategy": "best1bin",
+    "top": 5,
+    "polish_nfev": 150,
+    "checkpoint": "prefit_checkpoint.npz"
+  },
+  "optimize": {
+    "maxiter_nuis": 50,
+    "maxiter": 300
+  },
+  "mcmc": {
+    "enabled": false,
+    "nwalkers": 0,
+    "steps": 2000,
+    "init_hessian": true,
+    "backend": "chain.h5"
+  },
+  "planets": [
+    {
+      "name": "b",
+      "transiting": true,
+      "P": 3.0013,
+      "P_range": 0.003,
+      "midtimes": "midtimes_b.dat",
+      "mass_unit": "Mearth",
+      "phase_window": 0.08,
+      "mass_bounds": [
+        1.0,
+        60.0
+      ],
+      "rp": 0.03,
+      "b": 0.3
+    },
+    {
+      "name": "c",
+      "transiting": true,
+      "P": 6.149,
+      "P_range": 0.003,
+      "midtimes": "midtimes_c.dat",
+      "mass_unit": "Mjup",
+      "phase_window": 0.08,
+      "mass_bounds": [
+        0.1,
+        3.0
+      ],
+      "rp": 0.1,
+      "b": 0.3
+    }
+  ],
+  "rv": {
+    "file": "rv.dat",
+    "gp": false,
+    "search_jitter": 3.0
+  }
+}
